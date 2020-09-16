@@ -1,8 +1,8 @@
 {
   "name": "md-links",
   "version": "0.1.0",
-  "description": "some description here",
-  "main": "index.js",
+  "description": "",
+  "main": "bin/index.js",
   "directories": {
     "test": "test"
   },
@@ -13,10 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/CaroSuarez/bog001-md-links.git"
   },
-  "author": "",
+  "author": "Carolina Suárez",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CaroSuarez/bog001-md-links/issues"
   },
-  "homepage": "https://github.com/CaroSuarez/bog001-md-links#readme"
+  "homepage": "https://github.com/CaroSuarez/bog001-md-links#readme",
+  "bin": {
+    "prueba": "./bin/index.js"
+  }
 }
