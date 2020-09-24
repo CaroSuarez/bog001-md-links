@@ -1,6 +1,6 @@
 {
   "name": "md-links",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "bin/index.js",
   "directories": {
@@ -14,12 +14,15 @@
     "url": "git+https://github.com/CaroSuarez/bog001-md-links.git"
   },
   "author": "Carolina Suárez",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/CaroSuarez/bog001-md-links/issues"
   },
   "homepage": "https://github.com/CaroSuarez/bog001-md-links#readme",
   "bin": {
     "prueba": "./bin/index.js"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
