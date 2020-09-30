@@ -20,9 +20,12 @@
   },
   "homepage": "https://github.com/CaroSuarez/bog001-md-links#readme",
   "bin": {
-    "prueba": "./bin/index.js"
+    "mdlinks": "bin/index.js"
   },
   "dependencies": {
-    "request": "^2.88.2"
-  }
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2",
+    "url-status-code": "^2.0.0"
+  },
+  "devDependencies": {}
 }

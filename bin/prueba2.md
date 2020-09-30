@@ -12,7 +12,5 @@ de ejemplo para probar
 
 
 
-[este es mi github](https://www.ejemplogithub.com)
-[este es mi facebook](https://www.ejemplofacebook.com)
-[este es mi github](https://www.ejemplogithub.com)
-[este es mi facebook](https://www.ejemplofacebook.com)
+
+
