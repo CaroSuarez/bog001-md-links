@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
-const mdLinks = require('./MDLinks')
-
+const mdLinks = require("./MDLinks");
+const stats = require("./5.stats");
+const statsAndValidate = require("./6.statsAndValidate");
 
 let argumentsArray = process.argv;
 let dir = argumentsArray[2];
-let options = ['--validate', '--stats'];
 let nArguments = argumentsArray.length;
 let option1 = argumentsArray[3];
-let option2 = argumentsArray[4];
+
 
 const usageText = `
   mdLinks helps you find links inside markdown files and
@@ -26,36 +26,30 @@ const usageText = `
     [!] Important note:
     Please enter a complete path or a path relative to the current working directory.
     
-  `
+  `;
 
-
-if(nArguments==2){
-
-  console.log(usageText)
-
-} else if (nArguments==3 ) {
-
-  mdLinks(dir).then((links)=>console.log(links))
-
-} else if (nArguments==4 & option1=='--validate'){
-
-  mdLinks(dir, {validate:true}).then((links)=>console.log(links))  
-  
-} else if (nArguments==4 & option1=='--stats'){
-  console.log('aquí iría la impresión de stats')
-
-
-
-} else if (nArguments==5 & argumentsArray.includes('--validate') & argumentsArray.includes('--stats')){
-  console.log('me falta mirar como validar las dos opciones')
+if (nArguments == 2) {
+  console.log(usageText);
+} else if (nArguments == 3) {
+  mdLinks(dir).then((links) => console.log(links));
+} else if ((nArguments == 4) & (option1 == "--validate")) {
+  mdLinks(dir, { validate: true }).then((links) => {
+    console.log(links);
+  });
+} else if ((nArguments == 4) & (option1 == "--stats")) {
+  mdLinks(dir).then((links) => {
+    console.log(stats(links));
+  });
+} else if (
+  (nArguments == 5) &
+  argumentsArray.includes("--validate") &
+  argumentsArray.includes("--stats")
+) {
+  mdLinks(dir, { validate: true }).then((links) => {
+    console.log(statsAndValidate(links));
+  });
 } else {
-  console.log('Ups! Seems like you enter non valid options')
-  console.log('--------------------------------------------')
-  console.log(usageText)
-
+  console.log("Ups! Seems like you enter non valid options");
+  console.log("--------------------------------------------");
+  console.log(usageText);
 }
-
-
-
-
-

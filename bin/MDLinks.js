@@ -6,6 +6,7 @@ const validateArrayObjects = require("./4.validateArrayObjects");
 
 const mdLinks = (givenPath, options) => {
   let absolutePath = toAbsolutePath(givenPath);
+  console.log(typeof(absolutePath))
   let mdFilesArray = createMdFilesArray(absolutePath);
   
   let finalArray1 = createObjectsArray(mdFilesArray, options);

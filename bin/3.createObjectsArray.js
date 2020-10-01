@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const createObjectsArray = (mdPathsArray, options) => {
+const createObjectsArray = (mdPathsArray) => {
   let finalResult = [];
   
 
@@ -16,7 +16,7 @@ const createObjectsArray = (mdPathsArray, options) => {
       let textsAndLinks = completeContent.match(regex);
   
       if (textsAndLinks == null) {
-        finalResult.push({
+          finalResult.push({
           file: fileName,
           error: "no links found in this file",
         });

@@ -4,6 +4,7 @@ const findMdFilesInFolder = require("./2.findMdFilesInFolder");
 
 const createMdFilesArray = (givenPath) => {
   
+  
   let exist = fs.existsSync(givenPath)
     if (exist){
 
@@ -26,6 +27,7 @@ const createMdFilesArray = (givenPath) => {
       let mdFilesAbsolutePaths = mdFilesNamesArray.map((mdFileName) =>
         path.join(givenPath, mdFileName)
       );
+      console.log(mdFilesAbsolutePaths);
       return mdFilesAbsolutePaths;
       }
 
