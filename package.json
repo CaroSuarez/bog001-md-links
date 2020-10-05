@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "mdlinks",
   "version": "1.0.0",
   "description": "Reads Links inside markdown links",
   "main": "bin/cli.js",

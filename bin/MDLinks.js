@@ -17,7 +17,6 @@ const mdLinks = (givenPath, options) => {
 
     return Promise.all(promisesArray).then((finalArray2) => {
       return new Promise((resolve) => {
-        console.log(finalArray2)
         resolve(finalArray2);
       });
     });
