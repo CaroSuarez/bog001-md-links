@@ -1,7 +1,7 @@
 {
   "name": "md-links",
   "version": "1.0.0",
-  "description": ,
+  "description": "Reads Links inside markdown links",
   "main": "bin/cli.js",
   "directories": {
     "test": "test"
