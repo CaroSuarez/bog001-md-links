@@ -2,7 +2,7 @@
   "name": "md-links",
   "version": "1.0.0",
   "description": "Reads Links inside markdown files",
-  "main": "./bin/MDLinks.js",
+  "main": "./bin/index.js",
   "directories": {
     "test": "test"
   },
