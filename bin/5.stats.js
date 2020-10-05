@@ -40,7 +40,7 @@ const stats = (arrayOfObjectWithLinks) => {
       error: arrayOfObjectWithLinks[0].error
     }
 
-    return errorStatsResult;
+    return obj;
 
 
   }
