@@ -4,9 +4,13 @@ const path = require("path");
 const toAbsolutePath = (givenPath) => {
   let absolutePath;
   if (path.isAbsolute(givenPath)) {
-    return (absolutePath = givenPath);
+    absolutePath = givenPath;
+
+    return absolutePath;
   } else {
-    return (absolutePath = path.resolve(givenPath));
+    absolutePath = path.resolve(givenPath);
+
+    return absolutePath;
   }
 };
 

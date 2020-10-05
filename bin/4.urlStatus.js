@@ -1,6 +1,8 @@
 const request = require("request");
 
 const urlStatus = (url) => {
+
+  
   return new Promise((resolve) => {
     if (url == undefined) {
       resolve("NA");

@@ -1,8 +1,8 @@
 {
   "name": "md-links",
   "version": "1.0.0",
-  "description": "",
-  "main": "bin/index.js",
+  "description": ,
+  "main": "bin/cli.js",
   "directories": {
     "test": "test"
   },
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/CaroSuarez/bog001-md-links#readme",
   "bin": {
-    "mdlinks": "bin/index.js"
+    "mdlinks": "bin/cli.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.1",

@@ -9,17 +9,20 @@ const mdLinks = (givenPath, options) => {
   let absolutePath = toAbsolutePath(givenPath);
   let mdFilesArray = createMdFilesArray(absolutePath);
   let finalArray1 = createObjectsArray(mdFilesArray, options);
+  
 
   if (util.isDeepStrictEqual(options, { validate: true })) {
     let promisesArray = validateArrayObjects(finalArray1);
+    
 
     return Promise.all(promisesArray).then((finalArray2) => {
-      return new Promise((resolve, reject) => {
+      return new Promise((resolve) => {
+        console.log(finalArray2)
         resolve(finalArray2);
       });
     });
   } else {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {     
       resolve(finalArray1);
     });
   }
