@@ -7,6 +7,12 @@ const stats = (arrayOfObjectWithLinks) => {
       linksCount += 1;
       linksArray.push(obj.link);
     }
+    else{
+      return {
+        total: 'no links found',
+        unique: 'no links found'
+      }
+    }
   }
 
   let uniqueLinks = [];

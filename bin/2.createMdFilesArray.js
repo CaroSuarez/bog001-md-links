@@ -27,7 +27,7 @@ const createMdFilesArray = (givenPath) => {
       let mdFilesAbsolutePaths = mdFilesNamesArray.map((mdFileName) =>
         path.join(givenPath, mdFileName)
       );
-      console.log(mdFilesAbsolutePaths);
+      
       return mdFilesAbsolutePaths;
       }
 

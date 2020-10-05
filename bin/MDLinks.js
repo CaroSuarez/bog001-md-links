@@ -5,10 +5,9 @@ const createObjectsArray = require("./3.createObjectsArray");
 const validateArrayObjects = require("./4.validateArrayObjects");
 
 const mdLinks = (givenPath, options) => {
-  let absolutePath = toAbsolutePath(givenPath);
-  console.log(typeof(absolutePath))
-  let mdFilesArray = createMdFilesArray(absolutePath);
   
+  let absolutePath = toAbsolutePath(givenPath);
+  let mdFilesArray = createMdFilesArray(absolutePath);
   let finalArray1 = createObjectsArray(mdFilesArray, options);
 
   if (util.isDeepStrictEqual(options, { validate: true })) {
