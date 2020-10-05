@@ -3,8 +3,11 @@ const fs = require("fs");
 const createObjectsArray = (mdPathsArray) => {
   let finalResult = [];
 
-  if (mdPathsArray.hasOwnProperty("error")) {
-    return finalResult.push(mdPathsArray);
+  if (mdPathsArray.error!=undefined) {
+
+    finalResult.push(mdPathsArray);   
+    return finalResult;
+    
   } else {
     for (path of mdPathsArray) {
       let fileName = path;

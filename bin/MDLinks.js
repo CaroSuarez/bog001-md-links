@@ -10,7 +10,6 @@ const mdLinks = (givenPath, options) => {
   let mdFilesArray = createMdFilesArray(absolutePath);
   let finalArray1 = createObjectsArray(mdFilesArray, options);
   
-
   if (util.isDeepStrictEqual(options, { validate: true })) {
     let promisesArray = validateArrayObjects(finalArray1);
     
@@ -21,7 +20,7 @@ const mdLinks = (givenPath, options) => {
       });
     });
   } else {
-    return new Promise((resolve) => {     
+    return new Promise((resolve) => {       
       resolve(finalArray1);
     });
   }
