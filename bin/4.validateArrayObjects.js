@@ -5,6 +5,8 @@ const validateArrayObjects = (arrayOfObjects) => {
   let promises = [];
 
   for (let i = 0; i < arrayOfObjects.length; i++) {
+
+    
     let url = arrayOfObjects[i].link;
 
     let promiseOfCode = urlStatus(url).then((code) => {

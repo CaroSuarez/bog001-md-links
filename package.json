@@ -2,7 +2,7 @@
   "name": "mdlinks",
   "version": "1.0.0",
   "description": "Reads Links inside markdown links",
-  "main": "bin/cli.js",
+  "main": "bin/MDLinks.js",
   "directories": {
     "test": "test"
   },
@@ -28,6 +28,6 @@
     "url-status-code": "^2.0.0"
   },
   "devDependencies": {
-    "jest": "^26.4.2"
+    "jest": "^26.5.0"
   }
 }
