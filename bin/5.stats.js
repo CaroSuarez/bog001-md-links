@@ -1,14 +1,17 @@
 const stats = (arrayOfObjectWithLinks) => {
   let linksCount = 0;
-  let linksArray = [];
+  let linksArray = [];  
 
-  for (obj of arrayOfObjectWithLinks) {
+  for (obj of arrayOfObjectWithLinks) {    
+    
     if (obj.link != undefined) {
       linksCount += 1;
       linksArray.push(obj.link);
     }
     
   }
+
+
 
   let uniqueLinks = [];
   linksArray.forEach((link) => {
@@ -19,10 +22,31 @@ const stats = (arrayOfObjectWithLinks) => {
 
   let uniqueCount = uniqueLinks.length;
 
-  return {
-    total: linksCount,
-    unique: uniqueCount,
-  };
+  if(linksArray.length>0){
+
+    let statsResult = {
+      total: linksCount,
+      unique: uniqueCount,
+    };
+
+    return statsResult;
+  
+
+  } else {
+
+    let errorStatsResult = {
+      total: 'NA',
+      unique : 'NA',
+      error: arrayOfObjectWithLinks[0].error
+    }
+
+    return errorStatsResult;
+
+
+  }
+
+  
+  
 };
 
 module.exports = stats;
