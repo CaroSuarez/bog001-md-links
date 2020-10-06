@@ -15,7 +15,7 @@ const createMdFilesArray = (givenPath) => {
       if (mdFilesNamesArray == "error: no md files found") {
         noMdFiles = {
           folder: givenPath,
-          error: colors.red('No markdown files inside this folder')
+          error: 'No markdown files inside this folder'
         };
 
         return noMdFiles;
