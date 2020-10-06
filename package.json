@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/CaroSuarez/bog001-md-links.git"
   },
-  "author": "Carolina Suárez",
+  "author": "carosuarez",
   "license": "MIT",
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": {
