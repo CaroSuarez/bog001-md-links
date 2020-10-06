@@ -1,4 +1,4 @@
-const toAbsolutePath = require('../bin/1.toAbsolutePath');
+const toAbsolutePath = require('../src/1.toAbsolutePath');
 
 describe('toAbsolutePath', () => {
 

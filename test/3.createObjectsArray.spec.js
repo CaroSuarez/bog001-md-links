@@ -1,4 +1,4 @@
-const createObjectsArray = require('../bin/3.createObjectsArray');
+const createObjectsArray = require('../src/3.createObjectsArray');
 
 const mdPathsArrayMock1 = {
     file: 'C:\Users\HP\OneDrive\Escritorio\bog001-md-links\test\notAMdFile.js',

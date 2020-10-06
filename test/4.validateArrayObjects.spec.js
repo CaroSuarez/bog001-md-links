@@ -1,4 +1,4 @@
-const validateArrayObjects = require('../bin/4.validateArrayObjects');
+const validateArrayObjects = require('../src/4.validateArrayObjects');
 
 let objectArrayMock1= [
     {

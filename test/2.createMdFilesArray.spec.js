@@ -1,4 +1,4 @@
-const createMdFilesArray = require('../bin/2.createMdFilesArray')
+const createMdFilesArray = require('../src/2.createMdFilesArray')
 
 describe('createMdFilesArray function', ()=> {
 

@@ -1,4 +1,4 @@
-const statsAndValidate = require('../bin/6.statsAndValidate');
+const statsAndValidate = require('../src/6.statsAndValidate');
 
 const mockArrayOfObjects1 = [
     {
@@ -34,10 +34,12 @@ const mockArrayOfObjects2 = [
 ]
 
 const resultObjectMock1 = {
-    total : 'no links found',
-    unique : 'no links found',
-    broken : 'no links found'
+    file: "escritorio/ejemplo1.md",
+    error: "no links found", 
+    broken : 'NA'
 }
+
+
 const resultObjectMock2 = {
     total : 4,
     unique : 3,

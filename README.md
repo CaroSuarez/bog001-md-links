@@ -10,7 +10,7 @@ The **md-links** package allows you to find all links inside a markdown file and
 
 ## Usage
 
-⋅⋅* You can use it as programmatically as follows:
+* You can use it as programmatically as follows:
 
 ```
 const md-links = require('md-links');
@@ -31,7 +31,7 @@ md-links('C:/Desktop/Example', {validate : true}).then(links => console.log(link
 
 
 
-⋅⋅* Use it as a CLI:
+* Use it as CLI:
 
 `mdlinks C:/Desktop/Example`
 

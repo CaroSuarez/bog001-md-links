@@ -1,4 +1,4 @@
-const stats = require('../bin/5.stats');
+const stats = require('../src/5.stats');
 
 
 
@@ -57,8 +57,8 @@ retunedObjectMock2 = {
 }
 
 retunedObjectMock3 = {
-    total: 'no links found',
-    unique: 'no links found'
+    file: "/escritorio/ejemplo.md",
+    error: 'No links found'    
 }
 
 describe('stats Function', () => {

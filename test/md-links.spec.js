@@ -1,4 +1,4 @@
-const mdLinks = require('../bin/MDLinks');
+const mdLinks = require('../src/index');
 
 const mockResponse1 = [
   {file: "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md", 
@@ -22,7 +22,32 @@ const mockResponse1 = [
   }
 ]
 
-
+const mockResponse2 = [
+  {
+    file : "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md", 
+    link : "https://es.wikidia.org/wiki/Markdown", 
+    text : "[Markdown]",
+    status: 404 
+  }, 
+  {
+    file : "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md", 
+    text : "[Node.js]",
+    link : "https://nodejs.org/", 
+    status : 200 
+  }, 
+  {
+    file : "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md", 
+    link : "https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg", 
+    text : "[md-links]",
+    status : 200 
+  }, 
+  {
+    file: "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md", 
+    text : "[md-links]",
+    link: "https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg", 
+    status : 200 
+  }
+]
 
 const noSuchDirectoryError = [
   {
@@ -50,11 +75,17 @@ const notAMdFile = [
 const noMdFilesInFolderError = [
   {
     error: "No markdown files inside this folder", 
-    folder: "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\images"
+    folder: "C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\src"
   }
 ]
 
 describe('mdLinks', () => {
+
+  it('should return a promise', () => {
+    return mdLinks('C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md', {validate : true}).then(links=> {
+            expect(links).toEqual(mockResponse2);
+          });    
+  });
 
   it('should return a promise', () => {
     return mdLinks('C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\prueba1.md').then(links=> {
@@ -81,7 +112,7 @@ describe('mdLinks', () => {
   });
 
   it('should return a promise', () => {
-    return mdLinks('C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\bin\\images').then(links=> {
+    return mdLinks('C:\\Users\\HP\\OneDrive\\Escritorio\\bog001-md-links\\src').then(links=> {
             expect(links).toEqual(noMdFilesInFolderError);
           });    
   });

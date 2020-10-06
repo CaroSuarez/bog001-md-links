@@ -1,4 +1,4 @@
-const urlStatus = require('../bin/4.urlStatus');
+const urlStatus = require('../src/4.urlStatus');
 
 describe('urlStatus Function', () => {
 

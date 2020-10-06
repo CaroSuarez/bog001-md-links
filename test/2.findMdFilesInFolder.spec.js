@@ -1,4 +1,4 @@
-const findMdFilesInFolder = require('../bin/2.findMdFilesInFolder');
+const findMdFilesInFolder = require('../src/2.findMdFilesInFolder');
 
 describe('findMdFilesInFolder function', () => {
     

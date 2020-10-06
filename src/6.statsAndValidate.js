@@ -6,8 +6,8 @@ const statsAndValidate = (arrayOfObjectWithLinks) => {
   let resultObject = stats(arrayOfObjectWithLinks);
 
   const resultObjectWhenNoLinks = {
-    total : 'no links found',
-    unique: 'no links found'
+    file: arrayOfObjectWithLinks[0].file,
+    error: 'no links found'
   }
 
   
@@ -22,7 +22,7 @@ const statsAndValidate = (arrayOfObjectWithLinks) => {
   }
 
   if(util.isDeepStrictEqual(resultObject, resultObjectWhenNoLinks)){
-    resultObject.broken = 'no links found';
+    resultObject.broken = 'NA';
     return resultObject;
   }else {
     let brokenLinksCount = uniqueBrokenLinks.length;
