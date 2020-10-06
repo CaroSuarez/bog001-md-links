@@ -13,9 +13,10 @@ const createMdFilesArray = (givenPath) => {
       let filesArray = fs.readdirSync(givenPath, "utf-8");
       let mdFilesNamesArray = findMdFilesInFolder(filesArray);
       if (mdFilesNamesArray == "error: no md files found") {
+        let errorText = chalk.red('No markdown files inside this folder');
         noMdFiles = {
           folder: givenPath,
-          error: chalk.red('No markdown files inside this folder')
+          error: errorText
         };
 
         return noMdFiles;
