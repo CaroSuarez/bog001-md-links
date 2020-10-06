@@ -1,6 +1,5 @@
 const fs = require("fs");
 const path = require("path");
-const chalk = require('chalk');
 const findMdFilesInFolder = require("./2.findMdFilesInFolder");
 
 const createMdFilesArray = (givenPath) => {

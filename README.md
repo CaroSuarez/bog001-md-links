@@ -33,16 +33,16 @@ md-links('C:/Desktop/Example', {validate : true}).then(links => console.log(link
 
 * Use it as CLI:
 
-`mdlinks C:/Desktop/Example`
+`mdlinks <path>`
 
 Shows the array of objects that specify the links found, their texts and the absolute path of the markdown file scaned in the given path. 
 
 
-`mdlinks C:/Desktop/Example --validate`
+`mdlinks <path> --validate`
 
 Shows the same array as before included the status code of each link.
 
-`mdlinks C:/Desktop/Example --validate --stats`
+`mdlinks <path> --validate --stats`
 
 Shows count of total, unique and broke links found.
 

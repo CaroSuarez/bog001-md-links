@@ -16,6 +16,7 @@
   },
   "author": "Carolina Suárez",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": {
     "url": "https://github.com/CaroSuarez/bog001-md-links/issues"
   },
@@ -24,8 +25,6 @@
     "mdlinks": "./bin/cli.js"
   },
   "dependencies": {
-    "chalk": "^4.1.0",
-    "colors": "^1.4.0",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2",
     "url-status-code": "^2.0.0"
