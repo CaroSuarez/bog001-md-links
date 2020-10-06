@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const colors = require('colors');
 const findMdFilesInFolder = require("./2.findMdFilesInFolder");
 
 const createMdFilesArray = (givenPath) => {
@@ -14,7 +15,7 @@ const createMdFilesArray = (givenPath) => {
       if (mdFilesNamesArray == "error: no md files found") {
         noMdFiles = {
           folder: givenPath,
-          error: 'No markdown files inside this folder'
+          error: 'No markdown files inside this folder'.red
         };
 
         return noMdFiles;
