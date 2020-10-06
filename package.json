@@ -24,6 +24,7 @@
     "mdlinks": "./bin/cli.js"
   },
   "dependencies": {
+    "colors": "^1.4.0",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2",
     "url-status-code": "^2.0.0"
