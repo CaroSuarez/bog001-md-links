@@ -11,8 +11,8 @@
     
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CaroSuarez/bog001-md-links.git"
+    
+    "url": "git://github.com/CaroSuarez/bog001-md-links"
   },
   "author": "Carolina Suárez <cslondo90@gmail.com>",
   "license": "MIT",
