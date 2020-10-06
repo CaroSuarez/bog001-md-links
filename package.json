@@ -1,5 +1,5 @@
 {
-  "name": "md-links",
+  "name": "@carosuarez/md-links",
   "version": "1.0.0",
   "description": "Reads Links inside markdown files",
   "main": "./src/index.js",

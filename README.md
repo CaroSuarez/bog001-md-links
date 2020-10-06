@@ -2,7 +2,7 @@
 
 ## Installation
 
-`npm install git+https://github.com/CaroSuarez/bog001-md-links.git`
+`npm install -g carosuarez/md-links`
 
 ## Description
 
