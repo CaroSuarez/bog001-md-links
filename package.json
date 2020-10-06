@@ -18,9 +18,9 @@
   "license": "MIT",
   
   "bugs": {
-    "url": "https://github.com/CaroSuarez/bog001-md-links/issues"
+    "url": "https://github.com/CaroSuarez/md-links/issues"
   },
-  "homepage": "https://github.com/CaroSuarez/bog001-md-links#readme",
+  "homepage": "https://github.com/CaroSuarez/md-links#readme",
   "bin": {
     "mdlinks": "./bin/cli.js"
   },
