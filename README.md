@@ -6,23 +6,23 @@
 
 ## Description
 
-The **md-links** package allows you to find all links inside a markdown file and check total number of links if any, unique links and broken links. You can also scan folder in which case it will search for markdown files inside the desire folder and links inside them. 
+The **md-links** package allows you to find all links inside a markdown file and check total number of links if any, unique links and broken links. You can also scan folders in which case it will search for markdown files inside. 
 
 ## Usage
 
 * You can use it as programmatically as follows:
 
 ```
-const md-links = require('md-links');
+const md-links = require('@carosuarez/md-links');
 ```
 
-In this case, `md-links` returns a promise which resolve in an array of objects that specify the links found, their texts and the absolute path of the markdown file scaned. 
+In this case, `md-links` returns a promise which resolves in an array of objects that specify the links found, their texts and the absolute path of the markdown file scaned. 
 
 ```
 md-links('C:/Desktop/Example').then(links => console.log(links));
 ```
 
-You can also check for the status code of the links founs adding the option:
+You can also check for the status code of the links found adding the option:
 
 
 ```
@@ -40,7 +40,7 @@ Shows the array of objects that specify the links found, their texts and the abs
 
 `mdlinks <path> --validate`
 
-Shows the same array as before included the status code of each link.
+Shows the same array as before included the status code for each link.
 
 `mdlinks <path> --validate --stats`
 
