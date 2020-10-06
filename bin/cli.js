@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-const mdLinks = require("./MDLinks");
-const stats = require("./5.stats");
-const statsAndValidate = require("./6.statsAndValidate");
+const mdLinks = require("../src/index");
+const stats = require("../src/5.stats");
+const statsAndValidate = require("../src/6.statsAndValidate");
 
 let argumentsArray = process.argv;
 let dir = argumentsArray[2];
